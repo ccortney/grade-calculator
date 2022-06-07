@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+    <script src="https://unpkg.com/jquery"></script>
+    <title>My Geometry Grade</title>
+
+</head>
+<body>
+    <div id="points-needed" class="container">
+        <div class="row m-2 justify-content-center text-center">
+            <h2>What Do I Need on the Final?</h2>
+        </div>
+        
+        <form action="" id="points-needed-form">
+
+
+            <div class="row justify-content-center ">
+                <div class="col-4 col-md-3 col-lg-2">
+                    <label for="Daily-Work" class="form-label">Daily Work Percentage</label>
+                    <div class="input-group mb-5">
+                        <input type="text" class = "form-control" required value="20" name="Daily-Work" id="Daily-Work">
+                        <span class="input-group-text">%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-3 col-lg-2">
+                    <label for="Unit-4-Test" class="form-label">Unit 4 Test</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class = "form-control" required value="50" name="Unit-4-Test" id="Unit-4-Test">
+                        <span class="input-group-text">/50</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-3 col-lg-2">
+                    <label for="Unit-5-Quiz-1" class="form-label">Unit 5 Quiz #1</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class = "form-control" required value="25" name="Unit-5-Quiz-1" id="Unit-5-Quiz-1">
+                        <span class="input-group-text">/25</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-3 col-lg-2">
+                    <label for="Unit-5-Quiz-2" class="form-label">Unit 5 Quiz #2</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class = "form-control" required value="25" name="Unit-5-Quiz-2" id="Unit-5-Quiz-2">
+                        <span class="input-group-text">/25</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-3 col-lg-2">
+                    <label for="Unit-5-Quiz-3" class="form-label">Unit 5 Quiz #3</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class = "form-control" required value="25" name="Unit-5-Quiz-3" id="Unit-5-Quiz-3">
+                        <span class="input-group-text">/25</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-3 col-lg-2">
+                    <label for="Unit-6-Test" class="form-label">Unit 6 Test</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class = "form-control" required value="50" name="Unit-6-Test" id="Unit-6-Test">
+                        <span class="input-group-text">/50</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-3 col-lg-2">
+                    <label for="Unit-7-Test" class="form-label">Unit 7 Test</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class = "form-control" required value="50" name="Unit-7-Test" id="Unit-7-Test">
+                        <span class="input-group-text">/50</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-3 col-lg-2">
+                    <label for="Unit-8-Test" class="form-label">Unit 8 Test</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class = "form-control" required value="50" name="Unit-8-Test" id="Unit-8-Test">
+                        <span class="input-group-text">/50</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center mt-3">
+                <div class="col-auto">
+                    <label for="wanted-grade" class="form-label">
+                        Desired Grade
+                        <select name="wanted-grade" id="wanted-grade" class="form-select" required>
+                            <option value="0.93">A</option>
+                            <option value="0.90">A-</option>
+                            <option value="0.86">B+</option>
+                            <option value="0.83">B</option>
+                            <option value="0.80">B-</option>
+                            <option value="0.76">C+</option>
+                            <option value="0.73">C</option>
+                            <option value="0.70">C-</option>
+                            <option value="0.60">D</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-3">
+                <div class="col-auto justify-content-center">
+                    <button type="submit" id="points-needed-submit" class="btn btn-primary">Calculate</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="row text-center">
+            <h4 id="points-needed-result">You Need to Get a ____ % on the Final to Get that Grade</h4>
+        </div>
+        <div>
+
+        </div>    
+    </div>
+    
+
+
+    </div>
+    
+
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+<script src="grades.js"></script>
+</body>
+</html>
